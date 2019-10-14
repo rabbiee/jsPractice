@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul {
+			list-style: none;
+		}
+		.list_items {
+			background: #eee;
+			padding-bottom: 5px;
+			margin-bottom: 2px;
+		}
+	</style>
+</head>
+<body>
+	
+
+	<h1>Hello World</h1>
+
+	<ul id="list">
+		<li><a href="#">Items 1</a></li>
+		<li><a href="#">Items 2</a></li>
+		<li><a href="#">Items 3</a></li>
+		<li><a href="#">Items 4</a></li>
+		<li><a href="#">Items 5</a></li>
+	</ul>
+
+	<input type="text" value="abc">
+
+	<script>
+
+		// var title = document.getElementsByTagName("h1");
+		// console.log(title[0]);
+		// title[0].innerText = "Goodbye";
+
+		var items = document.getElementsByTagName('li');
+
+		for (var i = 0; i < items.length; i++) {
+			items[i].classList.add("list_items");
+		}
+
+		var item2 = document.getElementsByClassName('list_items');
+
+		for (var i = 0; i < item2.length; i++) {
+			items[i].innerText = "Item " + (i+1);
+		}
+
+		var input = document.querySelectorAll('input');
+
+		console.log(input[0].value);
+
+
+
+
+	</script>
+</body>
+</html>
